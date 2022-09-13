@@ -95,7 +95,7 @@ cc.Class({
     },
     // 根据点击的像素位置，转换成网格中的位置
     convertTouchPosToCell: function(pos){
-        pos = this.node.convertToNodeSpace(pos);
+        pos = this.node.convertToNodeSpaceAR(pos);
         if(pos.x < 0 || pos.x >= GRID_PIXEL_WIDTH || pos.y < 0 || pos.y >= GRID_PIXEL_HEIGHT){
             return false;
         }
